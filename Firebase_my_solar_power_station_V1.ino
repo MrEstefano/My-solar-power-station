@@ -1,5 +1,11 @@
 /*
   My PV solar power station monitoring and control sketch based on Firebase platform
+  combining 5 projects in one
+  1.  https://randomnerdtutorials.com/esp32-data-logging-firebase-realtime-database/
+  2. https://randomnerdtutorials.com/esp32-esp8266-firebase-gauges-charts/
+  3. https://randomnerdtutorials.com/firebase-control-esp32-gpios/
+  4. https://randomnerdtutorials.com/control-esp-gpios-firebase-web-app/
+  5. Voltage measuring with Batery charge control using INA2019 and custom Shunt
   credits to: Rui Santos
   
 */
@@ -21,18 +27,18 @@
 #include "addons/RTDBHelper.h"
 
 // Insert your network credentials
-#define WIFI_SSID "VODAFONE-1221"
-#define WIFI_PASSWORD "fdRb9shdKKCTC2dq"
+#define WIFI_SSID "REPLACE_WITH_YOUR_SSID"
+#define WIFI_PASSWORD "REPLACE_WITH_YOUR_PASSWORD"
 
 // Insert Firebase project API Key
-#define API_KEY "AIzaSyCYRPVrqhwbLWHLtGmyUmLsXv_62e8FAK8"
+#define API_KEY "REPLACE_WITH_YOUR_PROJECT_API_KEY"
 
-// Insert Authorized Email and Corresponding Password
-#define USER_EMAIL "stefan.zakutansky@gmail.com"
-#define USER_PASSWORD "esp32.@"
+// Insert Authorized Username and Corresponding Password
+#define USER_EMAIL "REPLACE_WITH_THE_USER_EMAIL"
+#define USER_PASSWORD "REPLACE_WITH_THE_USER_PASSWORD"
 
 // Insert RTDB URLefine the RTDB URL
-#define DATABASE_URL "https://my-solar-station-default-rtdb.europe-west1.firebasedatabase.app"
+#define DATABASE_URL "REPLACE_WITH_YOUR_DATABASE_URL"
 
 #define DHTPIN 33 //22          //pin where the dht11 is connected
 
