@@ -1,3 +1,5 @@
+// Credits to: Sara Santos
+
 // Create the charts when the web page loads
 window.addEventListener('load', onload);
 
