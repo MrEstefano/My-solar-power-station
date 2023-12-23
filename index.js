@@ -1,3 +1,5 @@
+// Credits to: Sara Santos
+
 // convert epochtime to JavaScripte Date object
 function epochToJsDate(epochTime){
     return new Date(epochTime*1000);
