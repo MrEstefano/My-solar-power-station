@@ -1,3 +1,5 @@
+// Credits to: Sara Santos
+
 document.addEventListener("DOMContentLoaded", function(){
     // listen for auth status changes
     auth.onAuthStateChanged(user => {
