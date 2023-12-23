@@ -1,3 +1,6 @@
+
+// Credits to: Sara Santos
+
 // Create Temperature Gauge
 function createTemperatureGauge() {
     var gauge = new LinearGauge({
