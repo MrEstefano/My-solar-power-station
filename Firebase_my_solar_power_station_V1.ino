@@ -211,7 +211,7 @@ void setup(){
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);  
   //initialize INA219
   ina219.setBusRange(BRNG_16); 
-  ina219.setShuntSizeInOhms(0.35); // Insert your shunt size in ohms  
+  ina219.setShuntSizeInOhms(0.35); // Chang value in brackets according to resistance meassured of your high current shunt Ohms (remove SMD shunt from board)  
   delay(10);  
   if (!ina219.init()){    
     Serial.println("FAILED TO FIND");      
